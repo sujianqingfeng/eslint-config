@@ -1,0 +1,14 @@
+{
+  "name": "@hens/eslint-config-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hens",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1"
+  }
+}
