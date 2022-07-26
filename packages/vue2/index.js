@@ -9,9 +9,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     'prettier',
-    // 'plugin:prettier/recommended'
+    'plugin:prettier/recommended'
   ],
-  // plugins: ['prettier'],
+  plugins: ['prettier'],
   rules: {
     // 0 是 off  1 是 warning  2 是 error
 
@@ -142,7 +142,7 @@ module.exports = {
     semi: [2, 'never'],
 
     // 两个空格缩进
-    // 'indent': ['error', 2],
+    'indent': ['error', 2],
 
     // 对象空格
     'object-curly-spacing': [2, 'always'],
