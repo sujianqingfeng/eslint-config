@@ -15,6 +15,27 @@ module.exports = {
   rules: {
     // 0 是 off  1 是 warning  2 是 error
 
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "vueIndentScriptAndStyle": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "requirePragma": false,
+        "insertPragma": false,
+        "htmlWhitespaceSensitivity": "ignore"
+      },
+      {
+        "usePrettierrc": false
+      }
+    ],
+
     // sfc 顺序
     'vue/order-in-components': [
       2,
