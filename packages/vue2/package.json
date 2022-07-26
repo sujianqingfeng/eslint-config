@@ -8,8 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.2.0"
   }
 }

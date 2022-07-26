@@ -9,9 +9,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    // 'plugin:prettier/recommended'
   ],
-  plugins: ['prettier'],
+  // plugins: ['prettier'],
   rules: {
     // 0 是 off  1 是 warning  2 是 error
 

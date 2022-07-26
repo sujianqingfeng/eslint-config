@@ -1,5 +1,5 @@
 {
-  "name": "vue2",
+  "name": "example-vue2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,8 +12,9 @@
     "vue": "^2.7.5"
   },
   "devDependencies": {
+    "@hens/eslint-config-vue2": "workspace:*",
     "@vitejs/plugin-vue2": "^1.1.2",
-    "vite": "^3.0.0",
-    "vite-plugin-vue2": "^2.0.2"
+    "eslint": "^8.20.0",
+    "vite": "^3.0.0"
   }
 }
