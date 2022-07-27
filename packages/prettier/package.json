@@ -1,5 +1,5 @@
 {
-  "name": "@hens/eslint-config-vue2",
+  "name": "@hens/eslint-config-prettier",
   "version": "0.1.2",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,7 @@
   "author": "hens",
   "license": "MIT",
   "devDependencies": {
-    "eslint-plugin-vue": "^9.2.0",
-    "@hens/eslint-config-prettier": "workspace:*",
-    "@hens/eslint-config-basic": "workspace:*"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }

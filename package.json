@@ -1,13 +1,14 @@
 {
   "name": "@hens/eslint-config-monorepo",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "author": "hens",
   "license": "MIT",
   "devDependencies": {
+    "bumpp": "^8.2.1",
     "eslint": "^8.20.0",
     "prettier": "^2.7.1"
   }
