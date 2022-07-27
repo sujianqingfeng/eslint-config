@@ -1,3 +1,4 @@
+const basic = require('@hens/eslint-config-basic')
 module.exports = {
   env: {
     browser: true,
@@ -7,6 +8,7 @@ module.exports = {
     '@hens/prettier',
     'plugin:vue/recommended',
   ],
+  overrides: basic.overrides,
   rules: {
     // 0 是 off  1 是 warning  2 是 error
     
