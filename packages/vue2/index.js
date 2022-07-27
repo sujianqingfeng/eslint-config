@@ -105,5 +105,15 @@ module.exports = {
 
     // sfc tag 存在间隔
     'vue/padding-line-between-blocks': [2, 'always'],
+
+    // 闭合
+    'vue/html-self-closing': [
+      'error', {
+        'html': {
+          'void': 'always',
+          'normal': 'never',
+        },
+      }
+    ]
   }
 }
