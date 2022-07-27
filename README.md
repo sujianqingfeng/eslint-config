@@ -1,4 +1,36 @@
-# eslint-config
+# @sujian/eslint-config
+
+- prettier
+- json
+
+
+## usage
+
+### vue2
+```
+pnpm i @sujian/eslint-config-vue2 -D
+```
+
+.eslintrc.json
+
+```json
+{
+  "extends": "@sujian/vue2"
+}
+```
+
+### js
+```
+pnpm i @sujian/eslint-config-basic -D
+```
+
+.eslintrc.json
+
+```json
+{
+  "extends": "@sujian/basic"
+}
+```
 
 
 ## package.json

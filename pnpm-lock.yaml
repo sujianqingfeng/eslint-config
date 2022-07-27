@@ -45,9 +45,11 @@ importers:
       eslint: ^8.20.0
       eslint-config-prettier: ^8.5.0
       eslint-plugin-prettier: ^4.2.1
+      prettier: ^2.7.1
     dependencies:
       eslint-config-prettier: 8.5.0_eslint@8.20.0
       eslint-plugin-prettier: 4.2.1_370b9998364e21a2d582909b8d493e2e
+      prettier: 2.7.1
     devDependencies:
       eslint: 8.20.0
 
@@ -1036,7 +1038,6 @@ packages:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: true
 
   /prompts/2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}

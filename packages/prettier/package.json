@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "eslint": "^8.20.0"
