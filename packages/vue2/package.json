@@ -1,6 +1,6 @@
 {
   "name": "@hens/eslint-config-vue2",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "index.js",
   "files": [
@@ -9,10 +9,12 @@
   "keywords": [],
   "author": "hens",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@hens/eslint-config-basic": "workspace:*",
     "@hens/eslint-config-prettier": "workspace:*",
-    "eslint": "^8.20.0",
     "eslint-plugin-vue": "^9.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
   }
 }

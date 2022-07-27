@@ -1,6 +1,6 @@
 {
   "name": "@hens/eslint-config-prettier",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "index.js",
   "files": [
@@ -9,9 +9,11 @@
   "keywords": [],
   "author": "hens",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^8.20.0",
+  "dependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
   }
 }
