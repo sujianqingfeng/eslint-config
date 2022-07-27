@@ -1,6 +1,6 @@
 {
-  "name": "@hens/eslint-config-prettier",
-  "version": "0.0.1",
+  "name": "@sujian/eslint-config-prettier",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "files": [

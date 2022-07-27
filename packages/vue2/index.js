@@ -1,11 +1,11 @@
-const basic = require('@hens/eslint-config-basic')
+const basic = require('@sujian/eslint-config-basic')
 module.exports = {
   env: {
     browser: true,
   },
   extends: [
-    '@hens/basic',
-    '@hens/prettier',
+    '@sujian/basic',
+    '@sujian/prettier',
     'plugin:vue/recommended',
   ],
   overrides: basic.overrides,

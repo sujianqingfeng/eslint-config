@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": "@hens/vue2"
+  "extends": "@sujian/vue2"
 }

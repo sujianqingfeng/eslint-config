@@ -4,19 +4,19 @@ importers:
 
   .:
     specifiers:
-      '@hens/eslint-config-basic': workspace:*
+      '@sujian/eslint-config-basic': workspace:*
       bumpp: ^8.2.1
       eslint: ^8.20.0
       prettier: ^2.7.1
     devDependencies:
-      '@hens/eslint-config-basic': link:packages/basic
+      '@sujian/eslint-config-basic': link:packages/basic
       bumpp: 8.2.1
       eslint: 8.20.0
       prettier: 2.7.1
 
   examples/vue2:
     specifiers:
-      '@hens/eslint-config-vue2': workspace:*
+      '@sujian/eslint-config-vue2': workspace:*
       '@vitejs/plugin-vue2': ^1.1.2
       eslint: ^8.20.0
       vite: ^3.0.0
@@ -24,7 +24,7 @@ importers:
     dependencies:
       vue: 2.7.8
     devDependencies:
-      '@hens/eslint-config-vue2': link:../../packages/vue2
+      '@sujian/eslint-config-vue2': link:../../packages/vue2
       '@vitejs/plugin-vue2': 1.1.2_vite@3.0.3+vue@2.7.8
       eslint: 8.20.0
       vite: 3.0.3
@@ -53,13 +53,13 @@ importers:
 
   packages/vue2:
     specifiers:
-      '@hens/eslint-config-basic': workspace:*
-      '@hens/eslint-config-prettier': workspace:*
+      '@sujian/eslint-config-basic': workspace:*
+      '@sujian/eslint-config-prettier': workspace:*
       eslint: ^8.20.0
       eslint-plugin-vue: ^9.2.0
     dependencies:
-      '@hens/eslint-config-basic': link:../basic
-      '@hens/eslint-config-prettier': link:../prettier
+      '@sujian/eslint-config-basic': link:../basic
+      '@sujian/eslint-config-prettier': link:../prettier
       eslint-plugin-vue: 9.2.0_eslint@8.20.0
     devDependencies:
       eslint: 8.20.0

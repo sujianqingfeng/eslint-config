@@ -1,6 +1,6 @@
 {
-  "name": "@hens/eslint-config-monorepo",
-  "version": "0.0.1",
+  "name": "@sujian/eslint-config-monorepo",
+  "version": "0.0.0",
   "private": true,
   "description": "",
   "scripts": {
@@ -13,6 +13,6 @@
     "bumpp": "^8.2.1",
     "eslint": "^8.20.0",
     "prettier": "^2.7.1",
-    "@hens/eslint-config-basic": "workspace:*"
+    "@sujian/eslint-config-basic": "workspace:*"
   }
 }
