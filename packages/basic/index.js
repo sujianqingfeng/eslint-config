@@ -7,6 +7,7 @@ module.exports = {
     'eslint:recommended', 
     'plugin:jsonc/recommended-with-jsonc'
   ],
+  plugins: ['html'],
   ignorePatterns: [
     '*.min.*',
     '*.d.ts',

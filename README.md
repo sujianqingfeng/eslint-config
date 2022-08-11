@@ -2,6 +2,7 @@
 
 - prettier
 - json
+- html
 
 
 ## usage
