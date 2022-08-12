@@ -1,0 +1,15 @@
+{
+  "name": "example-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {},
+  "dependencies": {
+    "@sujian/eslint-config-typescript": "workspace:^0.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

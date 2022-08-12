@@ -33,6 +33,20 @@ pnpm i @sujian/eslint-config-basic -D
 }
 ```
 
+### ts
+```
+pnpm i @sujian/eslint-config-typescript -D
+```
+
+.eslintrc.json
+
+```json
+{
+  "extends": "@sujian/typescript"
+}
+```
+
+
 
 ## package.json
 

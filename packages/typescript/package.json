@@ -1,0 +1,16 @@
+{
+  "name": "@sujian/eslint-config-typescript",
+  "version": "0.0.4",
+  "description": "typescript eslint",
+  "author": "hens",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {},
+  "dependencies": {
+    "@sujian/eslint-config-basic": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0"
+  }
+}

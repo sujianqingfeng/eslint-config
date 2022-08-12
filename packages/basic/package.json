@@ -2,19 +2,19 @@
   "name": "@sujian/eslint-config-basic",
   "version": "0.0.4",
   "description": "",
+  "author": "hens",
+  "license": "MIT",
+  "keywords": [],
   "main": "index.js",
   "files": [
     "index.js"
   ],
-  "keywords": [],
-  "author": "hens",
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^8.20.0"
-  },
   "dependencies": {
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-jsonc": "^2.3.1",
     "jsonc-eslint-parser": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
   }
 }

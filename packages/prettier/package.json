@@ -2,13 +2,13 @@
   "name": "@sujian/eslint-config-prettier",
   "version": "0.0.4",
   "description": "",
+  "author": "hens",
+  "license": "MIT",
+  "keywords": [],
   "main": "index.js",
   "files": [
     "index.js"
   ],
-  "keywords": [],
-  "author": "hens",
-  "license": "MIT",
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",

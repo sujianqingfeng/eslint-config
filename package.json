@@ -3,16 +3,16 @@
   "version": "0.0.4",
   "private": true,
   "description": "",
+  "author": "hens",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
-  "author": "hens",
-  "license": "MIT",
   "devDependencies": {
+    "@sujian/eslint-config-basic": "workspace:*",
     "bumpp": "^8.2.1",
     "eslint": "^8.20.0",
-    "prettier": "^2.7.1",
-    "@sujian/eslint-config-basic": "workspace:*"
+    "prettier": "^2.7.1"
   }
 }
