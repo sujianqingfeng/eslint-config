@@ -114,6 +114,8 @@ module.exports = {
           'normal': 'never',
         },
       }
-    ]
+    ],
+    // 单行内容换行关闭
+    'vue/singleline-html-element-content-newline': 0
   }
 }
