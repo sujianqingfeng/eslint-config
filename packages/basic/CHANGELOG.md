@@ -4,3 +4,5 @@
 - add babel eslint parser 
 - add sourceType parserOption 
 
+# 0.0.12
+- add 

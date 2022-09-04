@@ -196,6 +196,9 @@ module.exports = {
     'space-before-blocks': [2, 'always'],
 
     // 分号后空格 比如for循环
-    'semi-spacing': 2
+    'semi-spacing': 2,
+    
+    // 操作空格
+    'space-infix-ops': 'error'
   }
 }
