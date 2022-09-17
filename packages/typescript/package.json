@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-typescript",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "typescript eslint",
   "author": "hens",
   "license": "MIT",
