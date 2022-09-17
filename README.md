@@ -20,6 +20,19 @@ pnpm i @sujian/eslint-config-vue3 -D
 }
 ```
 
+### vue3-ts
+```
+pnpm i @sujian/eslint-config-vue3-ts -D
+```
+
+.eslintrc.json
+
+```json
+{
+  "extends": "@sujian/vue3-ts"
+}
+```
+
 ### vue2
 ```
 pnpm i @sujian/eslint-config-vue2 -D

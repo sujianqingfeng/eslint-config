@@ -1,4 +1,5 @@
 const basic = require('@sujian/eslint-config-basic')
+
 module.exports = {
   env: {
     browser: true,
@@ -6,8 +7,15 @@ module.exports = {
   extends: [
     '@sujian/typescript',
     '@sujian/prettier',
-    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:@typescript-eslint/eslint-recommended'
   ],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
+  },
+  plugins: ['@typescript-eslint'],
   overrides: basic.overrides,
   rules: {
     // 0 是 off  1 是 warning  2 是 error
@@ -116,6 +124,9 @@ module.exports = {
       }
     ],
     // 单行内容换行关闭
-    'vue/singleline-html-element-content-newline': 0
+    'vue/singleline-html-element-content-newline': 0,
+    
+    // 
+    'vue/no-multiple-template-root': 0 
   }
 }
