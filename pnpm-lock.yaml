@@ -87,6 +87,21 @@ importers:
     devDependencies:
       eslint: 8.20.0
 
+  packages/vue3:
+    specifiers:
+      '@sujian/eslint-config-basic': workspace:*
+      '@sujian/eslint-config-prettier': workspace:*
+      '@sujian/eslint-config-vue2': workspace:*
+      eslint: ^8.20.0
+      eslint-plugin-vue: ^9.2.0
+    dependencies:
+      '@sujian/eslint-config-basic': link:../basic
+      '@sujian/eslint-config-prettier': link:../prettier
+      '@sujian/eslint-config-vue2': link:../vue2
+      eslint-plugin-vue: 9.2.0_eslint@8.20.0
+    devDependencies:
+      eslint: 8.20.0
+
 packages:
 
   /@babel/helper-validator-identifier/7.18.6:

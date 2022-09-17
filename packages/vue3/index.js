@@ -5,8 +5,6 @@ module.exports = {
     browser: true,
   },
   extends: [
-    '@sujian/basic',
-    '@sujian/prettier',
     '@sujian/vue2',
     'plugin:vue/recommended',
   ],
