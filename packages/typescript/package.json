@@ -12,6 +12,7 @@
   ],
   "scripts": {},
   "peerDependencies": {
+    "@typescript-eslint/parser": ">=5.0.0",
     "typescript": ">=3.9"
   },
   "dependencies": {
