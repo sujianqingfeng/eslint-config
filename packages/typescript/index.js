@@ -17,6 +17,13 @@ module.exports = {
 
     // off
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off'
+    '@typescript-eslint/no-non-null-assertion': 'off',
+
+    // 代码块空格
+    "space-before-blocks": "off",
+    "@typescript-eslint/space-before-blocks": "error",
+
+    // 类型空格
+    "@typescript-eslint/type-annotation-spacing": "error"
   }
 }
