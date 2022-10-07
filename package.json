@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-monorepo",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "private": true,
   "description": "",
   "author": "hens",
@@ -8,7 +8,7 @@
   "homepage": "https://github.com/sujianqingfeng/eslint-config",
   "scripts": {
     "lint": "eslint .",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
+    "change-version": "bumpp package.json packages/*/package.json --no-commit --no-push --no-tag",
     "publish-pkg": "pnpm -r publish --no-git-checks --access public"
   },
   "devDependencies": {

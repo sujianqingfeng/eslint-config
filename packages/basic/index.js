@@ -6,7 +6,8 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
+    requireConfigFile: false
   },
   extends: [
     'eslint:recommended', 

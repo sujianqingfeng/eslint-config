@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-basic",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "description": "",
   "author": "hens",
   "license": "MIT",
@@ -11,6 +11,8 @@
     "index.js"
   ],
   "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-jsonc": "^2.3.1",
     "jsonc-eslint-parser": "^2.1.0"
