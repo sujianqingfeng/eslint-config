@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-vue3-ts",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "",
   "author": "hens",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "index.js"
   ],
   "dependencies": {
-    "@sujian/eslint-config-prettier": "workspace:*",
     "@sujian/eslint-config-typescript": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
     "eslint-plugin-vue": "^9.2.0"
   },
   "devDependencies": {

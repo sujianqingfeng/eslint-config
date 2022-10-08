@@ -6,7 +6,6 @@ module.exports = {
   },
   extends: [
     '@sujian/typescript',
-    '@sujian/prettier',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/eslint-recommended'
   ],
@@ -71,7 +70,7 @@ module.exports = {
     'vue/component-tags-order': [
       2,
       {
-        order: ['script','template', 'style']
+        order: ['script', 'template', 'style']
       }
     ],
 
