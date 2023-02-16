@@ -19,5 +19,7 @@ module.exports = {
         order: ['script', 'template', 'style']
       }
     ],
+    // 多个根元素
+    'vue/no-multiple-template-root': 0
   }
 }
