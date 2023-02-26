@@ -12,8 +12,6 @@
   ],
   "dependencies": {
     "@sujian/eslint-config-typescript": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
     "eslint-plugin-vue": "^9.2.0"
   },
   "devDependencies": {

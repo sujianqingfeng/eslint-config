@@ -125,7 +125,7 @@ module.exports = {
     // 单行内容换行关闭
     'vue/singleline-html-element-content-newline': 0,
     
-    // 
+    // fragment 
     'vue/no-multiple-template-root': 0 
   }
 }
