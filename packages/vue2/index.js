@@ -5,8 +5,8 @@ module.exports = {
   },
   extends: [
     '@sujian/basic',
-    '@sujian/prettier',
     'plugin:vue/recommended',
+    '@sujian/prettier',
   ],
   overrides: basic.overrides,
   rules: {
