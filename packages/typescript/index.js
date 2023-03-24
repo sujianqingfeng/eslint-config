@@ -20,10 +20,10 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
 
     // 代码块空格
-    "space-before-blocks": "off",
-    "@typescript-eslint/space-before-blocks": "error",
+    'space-before-blocks': 'off',
+    '@typescript-eslint/space-before-blocks': 'error',
 
     // 类型空格
-    "@typescript-eslint/type-annotation-spacing": "error"
+    '@typescript-eslint/type-annotation-spacing': 'error'
   }
 }
