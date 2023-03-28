@@ -24,6 +24,10 @@ module.exports = {
     '@typescript-eslint/space-before-blocks': 'error',
 
     // 类型空格
-    '@typescript-eslint/type-annotation-spacing': 'error'
+    '@typescript-eslint/type-annotation-spacing': 'error',
+
+    // 关键字前后空格
+    "keyword-spacing": "off",
+    "@typescript-eslint/keyword-spacing": "error"
   }
 }
