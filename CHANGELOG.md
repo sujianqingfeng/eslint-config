@@ -1,3 +1,12 @@
+## [0.0.22](https://github.com/sujianqingfeng/eslint-config/compare/v0.0.21...v0.0.22) (2023-03-28)
+
+
+### Features
+
+* ts add keyword-spacing rule ([f46fc82](https://github.com/sujianqingfeng/eslint-config/commit/f46fc826f078a5d771e07c3a689514c8ba922ffa))
+
+
+
 ## [0.0.21](https://github.com/sujianqingfeng/eslint-config/compare/v0.0.20...v0.0.21) (2023-03-24)
 
 
