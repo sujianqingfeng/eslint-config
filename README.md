@@ -107,3 +107,14 @@ Create .vscode/settings.json
   ],
 }
 ```
+
+## Tips
+
+> 使用pnpm可能出现包找不到问题，是pnpm的安全策略问题，如果没有显式声明包，是不能够使用幽灵依赖。所以有两种解决方案。
+- 一种是显式声明依赖。
+- 另一种是依赖提升。
+
+```
+# .npmrc 推荐使用public-hoist-pattern来匹配提升。
+public-hoist-pattern[]=*eslint*
+```
