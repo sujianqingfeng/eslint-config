@@ -1,8 +1,14 @@
 const basic = require('@sujian/eslint-config-basic')
 
 module.exports = {
-  extends: ['@sujian/basic', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    '@sujian/basic', 
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript'
+  ],
   overrides: basic.overrides,
+  plugins: ['import'],
   rules: {
     '@typescript-eslint/no-this-alias': [
       'error',
@@ -27,7 +33,7 @@ module.exports = {
     '@typescript-eslint/type-annotation-spacing': 'error',
 
     // 关键字前后空格
-    "keyword-spacing": "off",
-    "@typescript-eslint/keyword-spacing": "error"
+    'keyword-spacing': 'off',
+    '@typescript-eslint/keyword-spacing': 'error'
   }
 }
