@@ -51,7 +51,7 @@ module.exports = {
           'type',
           'index'
         ],
-        'newlines-between': 'always', 
+        'newlines-between': 'ignore', 
         'pathGroupsExcludedImportTypes': ['builtin'],
         'alphabetize': {
           'order': 'asc', 
