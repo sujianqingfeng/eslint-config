@@ -22,9 +22,9 @@ importers:
 
   examples/typescript:
     dependencies:
-      '@sujian/eslint-config-typescript':
+      '@sujian/eslint-config-vue3-ts':
         specifier: workspace:*
-        version: link:../../packages/typescript
+        version: link:../../packages/vue3-ts
     devDependencies:
       typescript:
         specifier: ^4.7.4

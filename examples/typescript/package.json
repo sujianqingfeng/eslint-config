@@ -8,7 +8,7 @@
   "keywords": [],
   "scripts": {},
   "dependencies": {
-    "@sujian/eslint-config-typescript": "workspace:*"
+    "@sujian/eslint-config-vue3-ts": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^4.7.4"

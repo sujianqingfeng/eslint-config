@@ -4,11 +4,10 @@ module.exports = {
   extends: [
     '@sujian/basic', 
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript'
   ],
+  parser: '@typescript-eslint/parser',
   overrides: basic.overrides,
-  plugins: ['import'],
+  plugins: ['import', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-this-alias': [
       'error',
@@ -34,6 +33,32 @@ module.exports = {
 
     // 关键字前后空格
     'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': 'error'
+    '@typescript-eslint/keyword-spacing': 'error',
+
+    // 导入排序
+    'import/order': [
+      'error',
+      {
+        'groups': [
+          'builtin',  
+          'external', 
+          'internal', 
+          [
+            'parent',
+            'sibling'
+          ],
+          'object',
+          'type',
+          'index'
+        ],
+        'newlines-between': 'always', 
+        'pathGroupsExcludedImportTypes': ['builtin'],
+        'alphabetize': {
+          'order': 'asc', 
+          'caseInsensitive': true 
+        },
+        'pathGroups': []
+      }
+    ]
   }
 }
