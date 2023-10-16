@@ -35,6 +35,9 @@ module.exports = {
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': 'error',
 
+    // 对象空格
+    'object-curly-spacing': ['error', 'always'],
+
     // 导入排序
     'import/order': [
       'error',
