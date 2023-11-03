@@ -2,7 +2,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
-    browser: true,
+    browser: true
   },
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -10,10 +10,10 @@ module.exports = {
     requireConfigFile: false
   },
   extends: [
-    'eslint:recommended', 
+    'eslint:recommended',
     'plugin:jsonc/recommended-with-jsonc',
     '@sujian/remove-formatting',
-    '@sujian/prettier',
+    '@sujian/prettier'
   ],
   plugins: ['html'],
   ignorePatterns: [
@@ -32,7 +32,7 @@ module.exports = {
     '__snapshots__',
     '!.github',
     '!.vitepress',
-    '!.vscode',
+    '!.vscode'
   ],
   overrides: [
     {
@@ -43,12 +43,21 @@ module.exports = {
         'jsonc/comma-dangle': ['error', 'never'],
         'jsonc/comma-style': ['error', 'last'],
         'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+        'jsonc/key-spacing': [
+          'error',
+          { beforeColon: false, afterColon: true }
+        ],
         'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': ['error', { multiline: true, consistent: true }],
+        'jsonc/object-curly-newline': [
+          'error',
+          { multiline: true, consistent: true }
+        ],
         'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
-      },
+        'jsonc/object-property-newline': [
+          'error',
+          { allowMultiplePropertiesPerLine: true }
+        ]
+      }
     },
     {
       files: ['package.json'],
@@ -101,24 +110,20 @@ module.exports = {
               'husky',
               'simple-git-hooks',
               'lint-staged',
-              'eslintConfig',
-            ],
+              'eslintConfig'
+            ]
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' },
+            order: { type: 'asc' }
           },
           {
             pathPattern: '^exports.*$',
-            order: [
-              'types',
-              'require',
-              'import',
-            ],
-          },
-        ],
-      },
-    },
+            order: ['types', 'require', 'import']
+          }
+        ]
+      }
+    }
   ],
   rules: {
     // 0 是 off  1 是 warning  2 是 error
@@ -139,6 +144,6 @@ module.exports = {
     // 'operator-linebreak': [2, 'before'],
 
     // 字符串拼接使用 模板
-    'prefer-template': 2,
-    }
+    'prefer-template': 2
+  }
 }

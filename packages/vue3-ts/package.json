@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-vue3-ts",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "",
   "author": "hens",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "eslint-plugin-vue": "^9.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.20.0",
+    "eslint": "^8.52.0",
     "typescript": "^4.7.4"
   }
 }

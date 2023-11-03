@@ -19,7 +19,7 @@ module.exports = {
     'function-paren-newline': 'off',
     'generator-star-spacing': 'off',
     'implicit-arrow-linebreak': 'off',
-    'indent': 'off',
+    indent: 'off',
     'jsx-quotes': 'off',
     'key-spacing': 'off',
     'keyword-spacing': 'off',
@@ -51,9 +51,9 @@ module.exports = {
     'padded-blocks': 'off',
     'padding-line-between-statements': 'off',
     'quote-props': 'off',
-    'quotes': 'off',
+    quotes: 'off',
     'rest-spread-spacing': 'off',
-    'semi': 'off',
+    semi: 'off',
     'semi-spacing': 'off',
     'semi-style': 'off',
     'space-before-blocks': 'off',
@@ -67,7 +67,6 @@ module.exports = {
     'template-tag-spacing': 'off',
     'wrap-iife': 'off',
     'wrap-regex': 'off',
-    'yield-star-spacing': 'off',
-    
+    'yield-star-spacing': 'off'
   }
 }

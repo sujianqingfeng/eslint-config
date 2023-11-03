@@ -1,6 +1,6 @@
 {
   "name": "@sujian/eslint-config-monorepo",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "private": true,
   "description": "",
   "author": "hens",
@@ -16,7 +16,7 @@
     "@sujian/eslint-config-basic": "workspace:*",
     "bumpp": "^8.2.1",
     "conventional-changelog-cli": "^2.2.2",
-    "eslint": "^8.20.0",
-    "prettier": "^2.7.1"
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
   }
 }

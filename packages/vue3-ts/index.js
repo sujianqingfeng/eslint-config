@@ -2,7 +2,7 @@ const basic = require('@sujian/eslint-config-basic')
 
 module.exports = {
   env: {
-    browser: true,
+    browser: true
   },
   extends: [
     '@sujian/typescript',
@@ -18,7 +18,7 @@ module.exports = {
   overrides: basic.overrides,
   rules: {
     // 0 是 off  1 是 warning  2 是 error
-    
+
     // sfc 顺序
     'vue/order-in-components': [
       2,
@@ -115,17 +115,18 @@ module.exports = {
 
     // 闭合
     'vue/html-self-closing': [
-      'error', {
-        'html': {
-          'void': 'always',
-          'normal': 'never',
-        },
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'never'
+        }
       }
     ],
     // 单行内容换行关闭
     'vue/singleline-html-element-content-newline': 0,
-    
-    // fragment 
-    'vue/no-multiple-template-root': 0 
+
+    // fragment
+    'vue/no-multiple-template-root': 0
   }
 }

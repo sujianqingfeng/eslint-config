@@ -1,10 +1,7 @@
 const basic = require('@sujian/eslint-config-basic')
 
 module.exports = {
-  extends: [
-    '@sujian/basic', 
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['@sujian/basic', 'plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
   overrides: basic.overrides,
   plugins: ['import', '@typescript-eslint'],
@@ -12,8 +9,8 @@ module.exports = {
     '@typescript-eslint/no-this-alias': [
       'error',
       {
-        'allowDestructuring': false, // Disallow `const { props, state } = this`; true by default
-        'allowedNames': ['self', 'that'] // Allow `const self = this`; `[]` by default
+        allowDestructuring: false, // Disallow `const { props, state } = this`; true by default
+        allowedNames: ['self', 'that'] // Allow `const self = this`; `[]` by default
       }
     ],
 
@@ -25,25 +22,22 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'groups': [
+        groups: [
           'type',
-          'builtin',  
-          'external', 
-          'internal', 
-          [
-            'parent',
-            'sibling'
-          ],
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling'],
           'object',
           'index'
         ],
-        'newlines-between': 'ignore', 
-        'pathGroupsExcludedImportTypes': ['builtin'],
-        'alphabetize': {
-          'order': 'asc', 
-          'caseInsensitive': true 
+        'newlines-between': 'ignore',
+        pathGroupsExcludedImportTypes: ['builtin'],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true
         },
-        'pathGroups': []
+        pathGroups: []
       }
     ]
   }
