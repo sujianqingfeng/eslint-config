@@ -13,10 +13,13 @@
   "dependencies": {
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
+    "@sujian/eslint-config-remove-formatting": "workspace:*",
+    "@sujian/eslint-config-prettier": "workspace:*",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-jsonc": "^2.3.1",
     "jsonc-eslint-parser": "^2.1.0"
   },
+
   "devDependencies": {
     "eslint": "^8.20.0"
   }

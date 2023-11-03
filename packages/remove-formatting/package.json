@@ -1,0 +1,12 @@
+{
+  "name": "@sujian/eslint-config-remove-formatting",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/sujianqingfeng/eslint-config",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+  }
+}

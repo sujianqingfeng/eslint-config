@@ -17,32 +17,16 @@ module.exports = {
       }
     ],
 
-    'indent': 'off',
-    '@typescript-eslint/indent': ['error', 2,],
-
     // off
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-
-    // 代码块空格
-    'space-before-blocks': 'off',
-    '@typescript-eslint/space-before-blocks': 'error',
-
-    // 类型空格
-    '@typescript-eslint/type-annotation-spacing': 'error',
-
-    // 关键字前后空格
-    'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': 'error',
-
-    // 对象空格
-    'object-curly-spacing': ['error', 'always'],
 
     // 导入排序
     'import/order': [
       'error',
       {
         'groups': [
+          'type',
           'builtin',  
           'external', 
           'internal', 
@@ -51,7 +35,6 @@ module.exports = {
             'sibling'
           ],
           'object',
-          'type',
           'index'
         ],
         'newlines-between': 'ignore', 

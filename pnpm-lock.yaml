@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -57,6 +61,12 @@ importers:
       '@babel/eslint-parser':
         specifier: ^7.19.1
         version: 7.19.1(@babel/core@7.19.3)(eslint@8.20.0)
+      '@sujian/eslint-config-prettier':
+        specifier: workspace:*
+        version: link:../prettier
+      '@sujian/eslint-config-remove-formatting':
+        specifier: workspace:*
+        version: link:../remove-formatting
       eslint-plugin-html:
         specifier: ^7.1.0
         version: 7.1.0
@@ -87,6 +97,8 @@ importers:
         specifier: ^8.20.0
         version: 8.20.0
 
+  packages/remove-formatting: {}
+
   packages/typescript:
     dependencies:
       '@sujian/eslint-config-basic':
@@ -114,9 +126,6 @@ importers:
       '@sujian/eslint-config-basic':
         specifier: workspace:*
         version: link:../basic
-      '@sujian/eslint-config-prettier':
-        specifier: workspace:*
-        version: link:../prettier
       eslint-plugin-vue:
         specifier: ^9.2.0
         version: 9.2.0(eslint@8.20.0)

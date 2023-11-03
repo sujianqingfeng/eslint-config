@@ -12,7 +12,6 @@
   ],
   "dependencies": {
     "@sujian/eslint-config-basic": "workspace:*",
-    "@sujian/eslint-config-prettier": "workspace:*",
     "eslint-plugin-vue": "^9.2.0"
   },
   "devDependencies": {
