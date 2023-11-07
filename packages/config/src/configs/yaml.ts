@@ -1,0 +1,32 @@
+import * as pluginYaml from 'eslint-plugin-yml'
+import { default as parserYaml } from 'yaml-eslint-parser'
+import { GLOB_YAML } from '../globs'
+import { ConfigItem } from '../types'
+
+export function yaml(): ConfigItem[] {
+  return [
+    {
+      plugins: {
+        yaml: pluginYaml as any
+      }
+    },
+    {
+      files: [GLOB_YAML],
+      languageOptions: {
+        parser: parserYaml
+      },
+      rules: {
+        'style/spaced-comment': 'off',
+
+        'yaml/block-mapping': 'error',
+        'yaml/block-sequence': 'error',
+        'yaml/no-empty-key': 'error',
+        'yaml/no-empty-sequence-entry': 'error',
+        'yaml/no-irregular-whitespace': 'error',
+        'yaml/plain-scalar': 'error',
+
+        'yaml/vue-custom-block/no-parsing-error': 'error'
+      }
+    }
+  ]
+}

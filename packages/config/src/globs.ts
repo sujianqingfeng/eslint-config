@@ -1,5 +1,11 @@
 export const GLOB_SRC = '**/*.?([cm])[jt]s?(x)'
 
+export const GLOB_VUE = '**/*.vue'
+
+export const GLOB_JSON = '**/*.json'
+export const GLOB_JSON5 = '**/*.json5'
+export const GLOB_JSONC = '**/*.jsonc'
+
 export const GLOB_EXCLUDE = [
   '**/node_modules',
   '**/dist',
@@ -26,5 +32,7 @@ export const GLOB_EXCLUDE = [
   '**/LICENSE*',
   '**/__snapshots__',
   '**/auto-import?(s).d.ts',
-  '**/components.d.ts',
+  '**/components.d.ts'
 ]
+
+export const GLOB_YAML = '**/*.y?(a)ml'

@@ -1,25 +1,28 @@
-import type { ConfigItem } from '../types'
+import type {
+  ConfigItem,
+  OptionsComponentExts,
+  OptionsOverrides
+} from '../types'
 import pluginTs from '@typescript-eslint/eslint-plugin'
 import * as parserTs from '@typescript-eslint/parser'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import * as pluginImport from 'eslint-plugin-import'
-
 import { GLOB_SRC } from '../globs'
 
-export function typescript(): ConfigItem[] {
+export function typescript(
+  options: OptionsComponentExts & OptionsOverrides
+): ConfigItem[] {
+  const { componentExts = [], overrides = {} } = options ?? {}
   return [
     {
       plugins: {
-        '@typescript-eslint': pluginTs,
-        import: pluginImport
+        '@typescript-eslint': pluginTs
       }
     },
     {
-      files: [GLOB_SRC],
+      files: [GLOB_SRC, ...componentExts.map((ext) => `**/*.${ext}`)],
       languageOptions: {
         parser: parserTs,
         parserOptions: {
+          extraFileExtensions: componentExts.map((ext) => `.${ext}`),
           sourceType: 'module'
         }
       },
@@ -38,28 +41,7 @@ export function typescript(): ConfigItem[] {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
 
-        // 导入排序
-        'import/order': [
-          'error',
-          {
-            groups: [
-              'type',
-              'builtin',
-              'external',
-              'internal',
-              ['parent', 'sibling'],
-              'object',
-              'index'
-            ],
-            'newlines-between': 'ignore',
-            pathGroupsExcludedImportTypes: ['builtin'],
-            alphabetize: {
-              order: 'asc',
-              caseInsensitive: true
-            },
-            pathGroups: []
-          }
-        ]
+        ...overrides
       }
     }
   ]

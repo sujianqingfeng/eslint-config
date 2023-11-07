@@ -12,9 +12,9 @@
     "vue": "^2.7.5"
   },
   "devDependencies": {
-    "@sujian/eslint-config-vue2": "workspace:*",
+    "@sujian/eslint-config": "workspace:*",
     "@vitejs/plugin-vue2": "^1.1.2",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "vite": "^3.0.0"
   }
 }

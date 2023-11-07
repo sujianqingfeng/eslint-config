@@ -12,7 +12,8 @@
     "html",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "package.json"
   ],
   "cSpell.words": [
     "pnpm",

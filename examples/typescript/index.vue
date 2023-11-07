@@ -1,7 +1,6 @@
 <script lang="ts" setup>
-import { sum } from './utils'
-
 import type { A } from './types'
+import { sum } from './utils'
 
 function allSettle() {
   const a: A = 'a'
@@ -10,6 +9,4 @@ function allSettle() {
 }
 </script>
 
-<template>
-  ffff
-</template>
+<template>ffff</template>
