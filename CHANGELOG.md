@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.1...v1.0.2) (2023-11-08)
+
+
+### Features
+
+* add global ([65e5311](https://github.com/sujianqingfeng/eslint-config/commit/65e5311b3245110908baea726dd32db9ccbcda47))
+
+
+
 ## [0.0.27](https://github.com/sujianqingfeng/eslint-config/compare/v0.0.25...v0.0.27) (2023-11-03)
 
 
