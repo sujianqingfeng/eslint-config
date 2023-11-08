@@ -134,6 +134,9 @@ importers:
       eslint-plugin-yml:
         specifier: ^1.10.0
         version: 1.10.0(eslint@8.53.0)
+      globals:
+        specifier: ^13.23.0
+        version: 13.23.0
       jsonc-eslint-parser:
         specifier: ^2.4.0
         version: 2.4.0

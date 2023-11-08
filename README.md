@@ -24,9 +24,9 @@ import { defineConfig } from '@sujian/eslint-config'
 export default defineConfig({
   // ...options
 })
+```
 
 [options](https://github.com/sujianqingfeng/eslint-config/blob/161221d8b90490853d078e6d7d29ec3611eef473/packages/config/src/types.ts#L18)
-```
 
 
 ## Vscode 
