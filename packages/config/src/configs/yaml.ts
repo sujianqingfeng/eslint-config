@@ -1,9 +1,10 @@
 import * as pluginYaml from 'eslint-plugin-yml'
 import { default as parserYaml } from 'yaml-eslint-parser'
 import { GLOB_YAML } from '../globs'
-import { ConfigItem } from '../types'
+import { ConfigItem, OptionsOverrides } from '../types'
 
-export function yaml(): ConfigItem[] {
+export function yaml(options: OptionsOverrides): ConfigItem[] {
+  const { overrides } = options
   return [
     {
       plugins: {
@@ -25,7 +26,8 @@ export function yaml(): ConfigItem[] {
         'yaml/no-irregular-whitespace': 'error',
         'yaml/plain-scalar': 'error',
 
-        'yaml/vue-custom-block/no-parsing-error': 'error'
+        'yaml/vue-custom-block/no-parsing-error': 'error',
+        ...overrides
       }
     }
   ]

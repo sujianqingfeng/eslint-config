@@ -1,7 +1,8 @@
 import pluginPrettier from 'eslint-plugin-prettier'
-import { ConfigItem } from '../types'
+import { ConfigItem, OptionsOverrides } from '../types'
 
-export default function prettier(): ConfigItem[] {
+export function prettier(options: OptionsOverrides): ConfigItem[] {
+  const { overrides } = options
   return [
     {
       plugins: {
@@ -30,7 +31,8 @@ export default function prettier(): ConfigItem[] {
           {
             usePrettierrc: true
           }
-        ]
+        ],
+        ...overrides
       }
     }
   ]

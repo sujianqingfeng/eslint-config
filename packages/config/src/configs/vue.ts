@@ -1,17 +1,20 @@
 import type {
   ConfigItem,
   OptionsHasTypeScript,
+  OptionsOverrides,
   OptionsVueVersion
 } from '../types'
 import * as parserTs from '@typescript-eslint/parser'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import { default as pluginVue } from 'eslint-plugin-vue'
 import { default as parserVue } from 'vue-eslint-parser'
 import { GLOB_VUE } from '../globs'
 
-export default function vue(
-  options: OptionsHasTypeScript & OptionsVueVersion
+export function vue(
+  options: OptionsHasTypeScript & OptionsVueVersion & OptionsOverrides
 ): ConfigItem[] {
-  const { typescript, version } = options
+  const { typescript, version, overrides } = options
 
   const isVue3 = version === 3
 
@@ -170,7 +173,9 @@ export default function vue(
               // 多个根元素
               'vue/no-multiple-template-root': 'off'
             }
-          : {})
+          : {}),
+
+        ...overrides
       }
     }
   ]

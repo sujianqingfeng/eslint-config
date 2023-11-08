@@ -1,9 +1,11 @@
 import * as pluginJsonc from 'eslint-plugin-jsonc'
 import { default as parserJsonc } from 'jsonc-eslint-parser'
 import { GLOB_JSON, GLOB_JSON5, GLOB_JSONC } from '../globs'
-import { ConfigItem } from '../types'
+import { ConfigItem, OptionsOverrides } from '../types'
 
-export function jsonc(): ConfigItem[] {
+export function jsonc(options: OptionsOverrides): ConfigItem[] {
+  const { overrides } = options
+
   return [
     {
       plugins: {
@@ -41,7 +43,8 @@ export function jsonc(): ConfigItem[] {
         'jsonc/no-useless-escape': 'error',
         'jsonc/space-unary-ops': 'error',
         'jsonc/valid-json-number': 'error',
-        'jsonc/vue-custom-block/no-parsing-error': 'error'
+        'jsonc/vue-custom-block/no-parsing-error': 'error',
+        ...overrides
       }
     }
   ]

@@ -1,8 +1,14 @@
 import type {
-  EslintCommentsRules,
+  EslintRules,
   FlatESLintConfigItem,
   ImportRules,
-  MergeIntersection
+  JsoncRules,
+  MergeIntersection,
+  TypeScriptRules,
+  VueRules,
+  YmlRules,
+  ReactHooksRules,
+  ReactRules
 } from '@antfu/eslint-define-config'
 
 export interface OptionsComponentExts {
@@ -16,9 +22,29 @@ export type OptionsConfig = {
   vue?: boolean
   gitignore?: boolean
   prettier?: boolean
+  react?: boolean
+
+  overrides?: {
+    javascript?: ConfigItem['rules']
+    typescript?: ConfigItem['rules']
+    vue?: ConfigItem['rules']
+    jsonc?: ConfigItem['rules']
+    yaml?: ConfigItem['rules']
+    prettier?: ConfigItem['rules']
+    react?: ConfigItem['rules']
+  }
 } & OptionsComponentExts
 
-type Rules = MergeIntersection<ImportRules & EslintCommentsRules>
+type Rules = MergeIntersection<
+  TypeScriptRules &
+    ImportRules &
+    EslintRules &
+    YmlRules &
+    JsoncRules &
+    VueRules &
+    ReactHooksRules &
+    ReactRules
+>
 
 export type ConfigItem = Omit<FlatESLintConfigItem<Rules, false>, 'plugins'> & {
   name?: string

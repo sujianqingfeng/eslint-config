@@ -1,8 +1,10 @@
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import js from '@eslint/js'
-import { ConfigItem } from '../types'
+import { ConfigItem, OptionsOverrides } from '../types'
 
-export function javascript(): ConfigItem[] {
+export function javascript(options: OptionsOverrides): ConfigItem[] {
+  const { overrides = {} } = options
   return [
     {
       languageOptions: {
@@ -33,7 +35,8 @@ export function javascript(): ConfigItem[] {
         // 数组空格
         'no-sparse-arrays': 'error',
         // 字符串拼接使用 模板
-        'prefer-template': 'error'
+        'prefer-template': 'error',
+        ...overrides
       }
     }
   ]

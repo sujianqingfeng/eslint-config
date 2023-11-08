@@ -2,19 +2,36 @@ import type { ConfigItem, OptionsConfig } from './types'
 import fs from 'node:fs'
 import gitignore from 'eslint-config-flat-gitignore'
 import { isPackageExists } from 'local-pkg'
-import { ignores, javascript, typescript } from './configs'
-import { imports } from './configs/imports'
-import { jsonc } from './configs/jsonc'
-import prettier from './configs/prettier'
-import { sortPackageJson, sortTsconfig } from './configs/sort'
-import vue from './configs/vue'
-import { yaml } from './configs/yaml'
+import {
+  ignores,
+  javascript,
+  typescript,
+  imports,
+  yaml,
+  jsonc,
+  react,
+  vue,
+  prettier,
+  sortPackageJson,
+  sortTsconfig
+} from './configs'
 import { combine, getVueVersion } from './utils'
 
 const VuePackages = ['vue', 'nuxt', 'vitepress', '@slidev/cli']
 
+const flatConfigProps: (keyof ConfigItem)[] = [
+  'files',
+  'ignores',
+  'languageOptions',
+  'linterOptions',
+  'processor',
+  'plugins',
+  'rules',
+  'settings'
+]
+
 export async function defineConfig(
-  options: OptionsConfig,
+  options: OptionsConfig & ConfigItem = {},
   ...userConfigs: (ConfigItem | ConfigItem[])[]
 ) {
   const {
@@ -22,7 +39,9 @@ export async function defineConfig(
     gitignore: enableGitignore = true,
     typescript: enableTypeScript = isPackageExists('typescript'),
     vue: enableVue = VuePackages.some((i) => isPackageExists(i)),
-    prettier: enablePrettier = true
+    react: enableReact = isPackageExists('react'),
+    prettier: enablePrettier = true,
+    overrides = {}
   } = options
 
   const configs: ConfigItem[][] = []
@@ -33,7 +52,11 @@ export async function defineConfig(
     }
   }
 
-  configs.push(ignores(), javascript(), imports())
+  configs.push(
+    ignores(),
+    javascript({ overrides: overrides.javascript }),
+    imports()
+  )
 
   if (enableVue) {
     componentExts.push('vue')
@@ -42,33 +65,56 @@ export async function defineConfig(
   if (enableTypeScript) {
     configs.push(
       typescript({
-        componentExts
+        componentExts,
+        overrides: overrides.typescript
       })
     )
   }
 
   if (enableVue) {
     const v = await getVueVersion()
-    if (v) {
-      configs.push(
-        vue({
-          typescript: !!enableTypeScript,
-          version: v
-        })
-      )
-    }
+    configs.push(
+      vue({
+        typescript: !!enableTypeScript,
+        version: v === null ? 3 : v,
+        overrides: overrides.vue
+      })
+    )
+  }
+
+  if (enableReact) {
+    configs.push(
+      react({
+        overrides: overrides.react
+      })
+    )
   }
 
   if (options.jsonc ?? true) {
-    configs.push(jsonc(), sortPackageJson(), sortTsconfig())
+    configs.push(
+      jsonc({ overrides: overrides.jsonc }),
+      sortPackageJson(),
+      sortTsconfig()
+    )
   }
 
   if (options.yaml ?? true) {
-    configs.push(yaml())
+    configs.push(yaml({ overrides: overrides.yaml }))
   }
 
   if (enablePrettier) {
-    configs.push(prettier())
+    configs.push(prettier({ overrides: overrides.prettier }))
+  }
+
+  const fusedConfig = flatConfigProps.reduce((acc, key) => {
+    if (key in options) {
+      acc[key] = options[key] as any
+    }
+    return acc
+  }, {} as ConfigItem)
+
+  if (Object.keys(fusedConfig).length) {
+    configs.push([fusedConfig])
   }
 
   const merged = combine(...configs, ...userConfigs)

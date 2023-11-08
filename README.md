@@ -1,89 +1,31 @@
 # @sujian/eslint-config
 
-- prettier
+- javascript
+- typescript
+- vue
+- react
 - json
-- html
+- yaml
+- sort
+- prettier
 
 
 ## usage
 
-### vue3
 ```
-pnpm i @sujian/eslint-config-vue3 -D
-```
-
-.eslintrc.json
-
-```json
-{
-  "extends": "@sujian/vue3"
-}
+pnpm i @sujian/eslint-config -D
 ```
 
-### vue3-ts
-```
-pnpm i @sujian/eslint-config-vue3-ts -D
-```
+```js
+// file: eslint.config.js
 
-.eslintrc.json
+import { defineConfig } from '@sujian/eslint-config'
 
-```json
-{
-  "extends": "@sujian/vue3-ts"
-}
+export default defineConfig({
+  // ...option
+})
 ```
 
-### vue2
-```
-pnpm i @sujian/eslint-config-vue2 -D
-```
-
-.eslintrc.json
-
-```json
-{
-  "extends": "@sujian/vue2"
-}
-```
-
-### js
-```
-pnpm i @sujian/eslint-config-basic -D
-```
-
-.eslintrc.json
-
-```json
-{
-  "extends": "@sujian/basic"
-}
-```
-
-### ts
-```
-pnpm i @sujian/eslint-config-typescript -D
-```
-
-.eslintrc.json
-
-```json
-{
-  "extends": "@sujian/typescript"
-}
-```
-
-
-
-## package.json
-
-```json
-{
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
-}
-```
 
 ## Vscode 
 
@@ -101,20 +43,25 @@ Create .vscode/settings.json
     "javascriptreact",
     "typescriptreact",
     "vue",
+    "html",
     "json",
     "jsonc",
-    "json5"
+    "json5",
+    "package.json"
   ],
+  "eslint.experimental.useFlatConfig": true,
 }
 ```
 
-## Tips
 
-> 使用pnpm可能出现包找不到问题，是pnpm的安全策略问题，如果没有显式声明包，是不能够使用幽灵依赖。所以有两种解决方案。
-- 一种是显式声明依赖。
-- 另一种是依赖提升。
+## package.json
 
+```json
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
+}
 ```
-# .npmrc 推荐使用public-hoist-pattern来匹配提升。
-public-hoist-pattern[]=*eslint*
-```
+
