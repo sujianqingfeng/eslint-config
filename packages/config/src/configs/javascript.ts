@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import js from '@eslint/js'
+import globals from 'globals'
 import { ConfigItem, OptionsOverrides } from '../types'
 
 export function javascript(options: OptionsOverrides): ConfigItem[] {
@@ -10,9 +11,12 @@ export function javascript(options: OptionsOverrides): ConfigItem[] {
       languageOptions: {
         ecmaVersion: 2022,
         globals: {
-          node: true,
-          es6: true,
-          browser: true
+          ...globals.browser,
+          ...globals.es2021,
+          ...globals.node,
+          document: 'readonly',
+          navigator: 'readonly',
+          window: 'readonly'
         },
         parserOptions: {
           ecmaFeatures: {

@@ -9,6 +9,8 @@ import { default as pluginReactHook } from 'eslint-plugin-react-hooks'
 // @ts-expect-error
 import { default as pluginReactRefresh } from 'eslint-plugin-react-refresh'
 
+import globals from 'globals'
+
 import { ConfigItem, OptionsOverrides } from '../types'
 
 export function react(options: OptionsOverrides): ConfigItem[] {
@@ -25,9 +27,12 @@ export function react(options: OptionsOverrides): ConfigItem[] {
       languageOptions: {
         ecmaVersion: 2022,
         globals: {
-          node: true,
-          es6: true,
-          browser: true
+          ...globals.browser,
+          ...globals.es2021,
+          ...globals.node,
+          document: 'readonly',
+          navigator: 'readonly',
+          window: 'readonly'
         },
         parserOptions: {
           ecmaFeatures: {

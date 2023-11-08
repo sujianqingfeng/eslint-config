@@ -4,6 +4,8 @@ import type {
   OptionsOverrides
 } from '../types'
 import pluginTs from '@typescript-eslint/eslint-plugin'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import * as parserTs from '@typescript-eslint/parser'
 import { GLOB_SRC } from '../globs'
 

@@ -4,6 +4,8 @@ import type {
   OptionsOverrides,
   OptionsVueVersion
 } from '../types'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import * as parserTs from '@typescript-eslint/parser'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
