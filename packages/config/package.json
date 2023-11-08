@@ -1,9 +1,9 @@
 {
   "name": "@sujian/eslint-config",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "author": "",
+  "author": "hens",
   "license": "MIT",
   "keywords": [],
   "exports": {
@@ -21,8 +21,13 @@
     "build": "tsup src/index.ts --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch"
   },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
   "dependencies": {
+    "@eslint/js": "^8.53.0",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "eslint-config-flat-gitignore": "^0.1.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsonc": "^2.10.0",

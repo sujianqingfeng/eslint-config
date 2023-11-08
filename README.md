@@ -48,7 +48,7 @@ Create .vscode/settings.json
     "json",
     "jsonc",
     "json5",
-    "package.json"
+    "yaml"
   ],
   "eslint.experimental.useFlatConfig": true,
 }
