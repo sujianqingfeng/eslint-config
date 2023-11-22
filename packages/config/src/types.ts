@@ -23,6 +23,7 @@ export type OptionsConfig = {
   gitignore?: boolean
   prettier?: boolean
   react?: boolean
+  next?: boolean
 
   overrides?: {
     javascript?: ConfigItem['rules']
@@ -32,6 +33,7 @@ export type OptionsConfig = {
     yaml?: ConfigItem['rules']
     prettier?: ConfigItem['rules']
     react?: ConfigItem['rules']
+    next?: ConfigItem['rules']
   }
 } & OptionsComponentExts
 

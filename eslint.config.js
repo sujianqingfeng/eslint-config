@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from './packages/config/dist/index.js'
+import { defineConfig } from '@sujian/eslint-config'
 
 const config = defineConfig({
   vue: true,

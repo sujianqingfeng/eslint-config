@@ -13,7 +13,8 @@ import {
   vue,
   prettier,
   sortPackageJson,
-  sortTsconfig
+  sortTsconfig,
+  next
 } from './configs'
 import { combine, getVueVersion } from './utils'
 
@@ -40,6 +41,7 @@ export async function defineConfig(
     typescript: enableTypeScript = isPackageExists('typescript'),
     vue: enableVue = VuePackages.some((i) => isPackageExists(i)),
     react: enableReact = isPackageExists('react'),
+    next: enableNext = isPackageExists('next'),
     prettier: enablePrettier = true,
     overrides = {}
   } = options
@@ -86,6 +88,14 @@ export async function defineConfig(
     configs.push(
       react({
         overrides: overrides.react
+      })
+    )
+  }
+
+  if (enableNext) {
+    configs.push(
+      next({
+        overrides: overrides.next
       })
     )
   }
