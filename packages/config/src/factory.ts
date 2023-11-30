@@ -66,7 +66,7 @@ export async function defineConfig(
 
   if (enableTypeScript) {
     configs.push(
-      typescript({
+      await typescript({
         componentExts,
         overrides: overrides.typescript
       })
@@ -76,7 +76,7 @@ export async function defineConfig(
   if (enableVue) {
     const v = await getVueVersion()
     configs.push(
-      vue({
+      await vue({
         typescript: !!enableTypeScript,
         version: v === null ? 3 : v,
         overrides: overrides.vue

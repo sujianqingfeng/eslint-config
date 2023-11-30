@@ -4,21 +4,20 @@ import type {
   OptionsOverrides,
   OptionsVueVersion
 } from '../types'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import * as parserTs from '@typescript-eslint/parser'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import { default as pluginVue } from 'eslint-plugin-vue'
-import { default as parserVue } from 'vue-eslint-parser'
 import { GLOB_VUE } from '../globs'
 
-export function vue(
+export async function vue(
   options: OptionsHasTypeScript & OptionsVueVersion & OptionsOverrides
-): ConfigItem[] {
+): Promise<ConfigItem[]> {
   const { typescript, version, overrides } = options
 
   const isVue3 = version === 3
+
+  // const parserTs = await import('@typescript-eslint/parser')
+  const parserVue = (await import('vue-eslint-parser')).default
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
+  const pluginVue = (await import('eslint-plugin-vue')).default
 
   return [
     {
@@ -35,7 +34,11 @@ export function vue(
             jsx: true
           },
           extraFileExtensions: ['.vue'],
-          parser: typescript ? (parserTs as any) : null,
+          parser: typescript
+            ? // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
+              ((await import('@typescript-eslint/parser')) as any)
+            : null,
           sourceType: 'module'
         }
       },

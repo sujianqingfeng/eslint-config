@@ -3,16 +3,18 @@ import type {
   OptionsComponentExts,
   OptionsOverrides
 } from '../types'
-import pluginTs from '@typescript-eslint/eslint-plugin'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import * as parserTs from '@typescript-eslint/parser'
 import { GLOB_SRC } from '../globs'
 
-export function typescript(
+export async function typescript(
   options: OptionsComponentExts & OptionsOverrides
-): ConfigItem[] {
+): Promise<ConfigItem[]> {
   const { componentExts = [], overrides = {} } = options ?? {}
+
+  const pluginTs = (await import('@typescript-eslint/eslint-plugin')).default
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
+  const parserTs = await import('@typescript-eslint/parser')
+
   return [
     {
       plugins: {
