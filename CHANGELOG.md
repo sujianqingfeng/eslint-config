@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.2...v1.0.3) (2023-11-30)
+
+
+### Features
+
+* on-demand ts and vue ([b83896e](https://github.com/sujianqingfeng/eslint-config/commit/b83896ed03d45ccb338bed9fb8511ecf7b89d4cf))
+
+
+
 ## [1.0.2](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.1...v1.0.2) (2023-11-08)
 
 
