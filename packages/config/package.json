@@ -1,8 +1,8 @@
 {
   "name": "@sujian/eslint-config",
   "type": "module",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "eslint config",
   "author": "hens",
   "license": "MIT",
   "keywords": [],
@@ -43,6 +43,7 @@
     "globals": "^13.23.0",
     "jsonc-eslint-parser": "^2.4.0",
     "local-pkg": "^0.5.0",
+    "picocolors": "^1.0.0",
     "prettier": "^3.0.3",
     "vue-eslint-parser": "^9.3.2",
     "yaml-eslint-parser": "^1.2.2"
@@ -51,6 +52,7 @@
     "@antfu/eslint-define-config": "^1.23.0-2",
     "@types/node": "^20.8.10",
     "@types/yargs": "^17.0.32",
+    "eslint": "^8.54.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.2",
     "yargs": "^17.7.2"

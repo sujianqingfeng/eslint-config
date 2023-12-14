@@ -1,7 +1,8 @@
 {
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   "eslint.validate": [
     "javascript",
@@ -15,5 +16,5 @@
     "yaml"
   ],
   "eslint.experimental.useFlatConfig": true,
-  "cSpell.words": ["pnpm", "sujian"]
+  "cSpell.words": ["pnpm", "pnpx", "sujian", "tsup"]
 }

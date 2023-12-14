@@ -10,9 +10,15 @@
 - prettier
 
 
+## cli
+
+```sh
+pnpx @sujian/eslint-config
+```
+
 ## usage
 
-```
+```sh
 pnpm i @sujian/eslint-config -D
 ```
 
