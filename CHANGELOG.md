@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.3...v1.0.4) (2023-12-14)
+
+
+### Features
+
+* cli ([9f587c7](https://github.com/sujianqingfeng/eslint-config/commit/9f587c746d183db29062db099cf90c15c55c8c85))
+
+
+
 ## [1.0.3](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.2...v1.0.3) (2023-11-30)
 
 

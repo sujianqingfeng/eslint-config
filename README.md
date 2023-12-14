@@ -10,9 +10,15 @@
 - prettier
 
 
+## cli
+
+```sh
+pnpx @sujian/eslint-config
+```
+
 ## usage
 
-```
+```sh
 pnpm i @sujian/eslint-config -D
 ```
 
@@ -37,7 +43,7 @@ Create .vscode/settings.json
 {
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "javascript",
