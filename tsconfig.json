@@ -4,6 +4,8 @@
     "baseUrl": ".",
     "module": "es2020",
     "moduleResolution": "Node",
+
+    "resolveJsonModule": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
