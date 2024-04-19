@@ -19,7 +19,7 @@
     "@sujian/eslint-config": "workspace:*",
     "bumpp": "^8.2.1",
     "conventional-changelog-cli": "^2.2.2",
-    "eslint": "^8.54.0",
-    "prettier": "^3.0.3"
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.5"
   }
 }

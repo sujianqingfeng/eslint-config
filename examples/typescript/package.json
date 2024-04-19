@@ -8,10 +8,11 @@
   "keywords": [],
   "scripts": {},
   "dependencies": {
-        "@sujian/eslint-config": "workspace:*",
-        "vue": "^3.3.8"
+    "@sujian/eslint-config": "workspace:*",
+    "vue": "^3.3.8"
   },
   "devDependencies": {
+    "eslint": "^9.0.0",
     "typescript": "^4.7.4"
   }
 }

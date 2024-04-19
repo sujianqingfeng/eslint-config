@@ -11,7 +11,8 @@ import { default as pluginReactRefresh } from 'eslint-plugin-react-refresh'
 
 import globals from 'globals'
 
-import { ConfigItem, OptionsOverrides } from '../types'
+
+import type { ConfigItem, OptionsOverrides } from '../types'
 
 export function react(options: OptionsOverrides): ConfigItem[] {
   const { overrides = {} } = options
@@ -25,7 +26,7 @@ export function react(options: OptionsOverrides): ConfigItem[] {
     },
     {
       languageOptions: {
-        ecmaVersion: 2022,
+        // ecmaVersion: 2022,
         globals: {
           ...globals.browser,
           ...globals.es2021,
@@ -38,8 +39,8 @@ export function react(options: OptionsOverrides): ConfigItem[] {
           ecmaFeatures: {
             jsx: true
           },
-          ecmaVersion: 2022,
-          sourceType: 'module'
+          // ecmaVersion: 2022,
+          // sourceType: 'module'
         }
       },
       settings: {

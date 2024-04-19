@@ -1,3 +1,10 @@
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+const a = '1'
+
+console.log(a)
+</script>
+
 <template>
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -9,13 +16,6 @@
     <HelloWorld msg="Vite + Vue" />
   </div>
 </template>
-
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-const a = '1'
-
-console.log(a)
-</script>
 
 <style scoped>
 .logo {

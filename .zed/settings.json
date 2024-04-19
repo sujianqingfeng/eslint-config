@@ -1,0 +1,15 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#folder-specific-settings
+{
+  "formatter": "auto",
+  "format_on_save": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true
+  }
+}
