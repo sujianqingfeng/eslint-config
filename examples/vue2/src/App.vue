@@ -1,8 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 const a = '1'
-
-console.log(a)
+console.log('🚀 ~ a:', a)
 </script>
 
 <template>

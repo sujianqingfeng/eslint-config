@@ -1,6 +1,5 @@
-import { sum } from './utils'
-
 import type { A } from './types'
+import { sum } from './utils'
 
 export function allSettle() {
   const a: A = 'a'

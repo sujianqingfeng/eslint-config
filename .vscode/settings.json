@@ -15,6 +15,5 @@
     "json5",
     "yaml"
   ],
-  "eslint.experimental.useFlatConfig": true,
   "cSpell.words": ["pnpm", "pnpx", "sujian", "tsup"]
 }
