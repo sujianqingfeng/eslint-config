@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.4...v1.0.5) (2024-06-29)
+
+
+### Features
+
+* eslint 9.6.0 ([b0ed301](https://github.com/sujianqingfeng/eslint-config/commit/b0ed301c89680524c620b3c8038325d8e45a6ed6))
+
+
+
 ## [1.0.4](https://github.com/sujianqingfeng/eslint-config/compare/v1.0.3...v1.0.4) (2023-12-14)
 
 
