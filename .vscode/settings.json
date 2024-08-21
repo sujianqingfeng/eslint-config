@@ -15,5 +15,12 @@
     "json5",
     "yaml"
   ],
-  "cSpell.words": ["pnpm", "pnpx", "sujian", "tsup"]
+  "cSpell.words": [
+    "antfu",
+    "picocolors",
+    "pnpm",
+    "pnpx",
+    "sujian",
+    "tsup"
+  ]
 }
